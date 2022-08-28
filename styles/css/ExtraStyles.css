@@ -1,0 +1,211 @@
+:root {
+    --black: rgb(0, 0, 0);
+    --main: rgb(70, 20, 88);
+    --sub: rgb(129, 30, 165);
+    --reachBlue: rgba(0, 204, 255);
+    --reachRed: rgb(239, 34, 34);
+    --reachGray: rgb(53, 53, 53);
+    --reachLightGreen: rgb(182, 250, 207);
+    --reachGreen: rgb(8, 89, 54);
+    --reachWhite: rgb(209, 209, 209);
+    --reachYellow: rgb(234, 240, 59);
+    --boxShadow: 0 0 10px 0 rgba(0, 204, 255, 0.4);
+    --boxShadowMag: 0 0 10px 0 rgba(255, 0, 238, 0.4);
+  }
+
+
+body {
+  background-color: var(--reachWhite);
+  color: var(--black);
+}
+
+.box {
+  width: 50%;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin: 0 auto;
+}
+
+.space {
+  margin-top: 35px;
+}
+
+.rightImage {
+  content: url("../img/morra.jpeg");
+  width: 100%;
+}
+
+.generalContainer {
+  margin: 10px 10px 10px 10px;
+}
+
+.button {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 25px;
+  background-color: var(--reachLightGreen);
+  border-radius: 100px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  color: var(--reachGreen);
+  cursor: pointer;  
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 250ms;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button:hover {
+  box-shadow: rgba(44,187,99,.35) 0 -25px 18px -14px inset,rgba(44,187,99,.25) 0 1px 2px,rgba(44,187,99,.25) 0 2px 4px,rgba(44,187,99,.25) 0 4px 8px,rgba(44,187,99,.25) 0 8px 16px,rgba(44,187,99,.25) 0 16px 32px;
+  transform: scale(1.05) rotate(-1deg);
+}
+
+.fundActionContainer {
+   padding: 10px;
+}
+
+input {
+  margin: 0 auto;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  position:relative;	
+  font-size: 1.5em;  
+  background-color: var(--reachLightGreen);
+  border-radius: 10px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  padding: 3px;
+  display: inline-block;  
+}
+
+input:focus + span {
+  opacity: 1;
+  transform: scale(1);
+}
+
+input:not(span) {  
+  display: inherit;  
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  padding: 0 .325em;
+  z-index: 1; 
+}
+
+html {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	line-height:1.5;
+	font-size:1em;
+}
+
+input {
+	font-family: inherit;
+	line-height:inherit;
+	color:#2e3750;
+	min-width:12em;
+}
+
+input::placeholder {
+	color: var(--reachGray);
+}
+
+.setWagerTextbox {
+  margin-top: 25px;  
+}
+
+pre {
+  font-size: large;
+  margin: 0 auto;
+  font-family: CerebriSans-Regular,-apple-system,system-ui,Roboto,sans-serif;
+  position: relative;	
+  font-size: 1.5em;  
+  background-color: var(--reachLightGreen);
+  border-radius: 10px;
+  box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset,rgba(44, 187, 99, .15) 0 1px 2px,rgba(44, 187, 99, .15) 0 2px 4px,rgba(44, 187, 99, .15) 0 4px 8px,rgba(44, 187, 99, .15) 0 8px 16px,rgba(44, 187, 99, .15) 0 16px 32px;
+  padding: 3px;
+  display: flex;
+  width: 90%;
+	line-height: inherit;
+	color: var(--reachGray);
+	min-width: 12em;
+}
+
+pre:focus + span {
+  opacity: 1;
+  transform: scale(1);
+}
+
+pre:not(span) {  
+  font-size: large;
+  display: inherit;  
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  padding: 0 .325em;
+  z-index: 1; 
+}
+
+pre::placeholder {
+	color: var(--reachGray);
+}
+
+.setContractTextbox {
+  margin: 0 auto;
+  width: 90%;
+  font-size: large;
+}
+
+.buttonFinger {
+  margin: 0 auto;
+  background-color: var(--reachYellow);
+  border: 0 solid var(--reachWhite);
+  box-sizing: border-box;
+  color: #000000;
+  display: flex;  
+  font-size: 1rem;
+  font-weight: 700;
+  justify-content: center;
+  line-height: 1.75rem;
+  padding: .75rem 1.65rem;
+  position: relative;
+  text-align: center;
+  text-decoration: none var(--black) solid;
+  text-decoration-thickness: auto;
+  width: 100%;
+  max-width: 460px;
+  position: relative;
+  cursor: pointer;
+  transform: rotate(-2deg);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.buttonFinger:focus {
+  outline: 0;
+}
+
+.buttonFinger:after {
+  content: '';
+  position: absolute;
+  border: 1px solid var(--black);
+  bottom: 4px;
+  left: 4px;
+  width: calc(100% - 1px);
+  height: calc(100% - 1px);
+}
+
+.buttonFinger:hover:after {
+  bottom: 2px;
+  left: 2px;
+}
+
+@media (min-width: 768px) {
+  .buttonFinger {
+    padding: .75rem 3rem;
+    font-size: 1.25rem;
+  }
+}
